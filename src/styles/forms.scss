@@ -1,0 +1,125 @@
+@import './colors.scss';
+
+.form, .right-sidebar__form{
+    border-radius: 30px;
+    box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.25);
+    background: $formBackground;
+    padding: 30px;
+    padding-top: 19px;
+    min-width: 440px;
+    &__title{
+        color: $sectionTitle;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0%;
+        margin-bottom: 30px;
+        margin-top: 0;
+        text-align: center;
+    }
+    &-item{
+        display: flex;
+        flex-direction: column;
+        &_double{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            .form-item{
+                width: 47%;
+            }
+        }
+        &:not(&:last-child){
+            margin-bottom: 12px;
+        }
+        &__label{
+            color: rgb(87, 108, 112);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0%;
+            margin-left: 10px;
+            margin-bottom: 6px;
+        }
+        &__input, .p-inputtextarea{
+            border: 2px solid rgba(87, 108, 112, 0.3);
+            border-radius: 10px;
+            height: 43px;
+            width: 100% !important;
+            overflow: hidden;
+            * {
+                border: none;
+            }
+            .p-icon-field{
+                width: 100%;
+                height: 100%;
+                input{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .p-datepicker-trigger{
+                background: transparent;
+                svg{
+                    path{
+                        fill: #576C70;
+                    }
+                }
+                i {
+                    color: #576C70;
+                }
+            }
+        }
+    }
+    &__controls{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 30px;
+        &__button{
+            width: 47%;
+            border-radius: 10px;
+            height: 43px;
+            &_left{
+                border: 2px solid rgb(87, 108, 112);
+                color: rgb(87, 108, 112);
+            }
+            &_right{
+                border: 2px solid rgba(87, 108, 112, 0.3);
+                border-radius: 10px;
+                background: rgb(87, 108, 112);
+            }
+        }
+    }
+}
+
+.right-sidebar__form{
+    border-radius: none;
+    box-shadow: none;
+    background: $white;
+    padding: 0;
+    padding-top: none;
+    min-width: unset;
+}
+
+.p-dropdown-items{
+    li{
+        padding: 15px;
+    }
+}
+
+.p-inputtextarea{
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.create-task-button{
+    width: 100% !important;
+    border: 2px solid rgba(87, 108, 112, 0.3);
+    border-radius: 10px;
+    background: rgb(87, 108, 112);
+    margin-top: 15px;
+}

@@ -1,0 +1,28 @@
+@import "../../../styles/colors.scss";
+
+.content{
+  width: 1587px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.about{
+  height: 1048px;
+  background: $aboutUs;
+  display: flex;
+  align-items: flex-end;
+}
+
+.title{
+  color: $sectionTitle;
+  font-size: 40px;
+  margin-bottom: 72px;
+}
+
+.stages{
+  padding-bottom: 187px;
+}
+

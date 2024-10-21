@@ -1,0 +1,128 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 154px); // уменьшаем ширину дней недели
+    gap: 10px;
+    align-items: start;
+    padding-left: 36px; // добавляем отступ слева
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-column: span 7;
+    color: rgb(87, 108, 112);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 30px;
+    span{
+        color: rgb(152, 179, 184)
+    }
+}
+
+.button {
+    cursor: pointer;
+    align-self: start; // прижимаем к левому краю
+    color: 2px solid rgb(152, 179, 184);
+}
+
+.week {
+    display: contents;
+}
+
+.dayName, .day {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.dayName {
+    height: 20px;
+    border: none;
+    align-items: flex-start;
+    color: rgb(174, 199, 203);
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.day {
+    border: 1px solid rgba(87, 108, 112, 0.3);
+    height: 130px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-radius: 8px;
+    color: rgb(87, 108, 112);
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.event {
+    border-radius: 5px;
+    background: #576C70;
+    width: 100%;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    &:first-child{
+        margin-top: 3px;
+    }
+    &:not(&:last-child){
+        margin-bottom: 3px;
+    }
+    &Time{
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: center;
+        background: #344244;
+        padding: 0 3px;
+        border-radius: 4px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-width: 42px;
+    }
+    &Name{
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: left;
+        width: -webkit-fill-available;
+        padding: 0 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover {
+            white-space: normal;
+            overflow: visible; // измените это свойство
+            max-height: none;
+        }
+    }
+}
+
+.notCurrentMonth{
+    background: rgba(87, 108, 112, 0.3);
+    color: rgba(87, 108, 112, 0.3);
+}
+
+.monthTitle{
+    margin: 0 20px;
+    width: 200px;
+    color: rgb(87, 108, 112) !important
+}
+

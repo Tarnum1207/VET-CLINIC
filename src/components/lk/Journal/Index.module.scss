@@ -1,0 +1,14 @@
+.table{
+    width: 60%;
+    margin: 0 auto;
+    z-index: 0;
+    height: 98vh;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-top: 20px;
+
+    // Отключить скроллбар
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

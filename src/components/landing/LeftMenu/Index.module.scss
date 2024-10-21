@@ -1,0 +1,135 @@
+@import "../../../styles/colors.scss";
+
+.menu{
+    position: fixed;
+    width: 50vw;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    backdrop-filter: blur(44px);
+    background: rgba(144, 173, 177, 0.4);
+    z-index: 999;
+    transition: 1s;
+    left: -50vw;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        padding: 42px;
+
+        &__top{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+
+            &__link{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 5px;
+                background: $blockTitle;
+                height: 45px;
+                border-radius: 100px;
+                margin-left: 60px;
+                button{
+                    border: 0;
+                    background: transparent;
+                    cursor: pointer;
+                    &:first-child{
+                        background: $lightBlue;
+                        height: 100%;
+                        border-radius: 100px;
+                        padding: 0 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $white;
+                        text-decoration: none;
+                        font-weight: 600;
+                    }
+                    &:last-child{
+                        height: 100%;
+                        border-radius: 100px;
+                        padding: 0 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $white;
+                        text-decoration: none;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        &__links{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 40px;
+            a {
+                color: $white;
+                text-decoration: none;
+                font-size: 22px;
+                font-weight: 500;
+                margin-top: 20px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &__contacts{
+            position: absolute;
+            bottom: 42px;
+            left: 42px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &-item{
+                display: flex;
+                flex-direction: column;
+                a{
+                    color: $white;
+                    font-size: 26px;
+                    font-weight: 700;
+                }
+                p{
+                    color: $subtitle;
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+                &:last-child{
+                    margin-left: 50px;
+                }
+            }
+        }
+
+        &-logo{
+            width: 186px
+        }
+    }
+}
+
+.button{
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: 44px;
+    right: -7%;
+    cursor: pointer;
+    z-index: 999;
+    transition: .5s;
+}
+
+.menu-active{
+    left: 0%;
+    .button{
+        right: 100px;
+        transform: rotate(180deg);
+        transition: .5s;
+    }
+}
+
+.menu__top{
+
+}

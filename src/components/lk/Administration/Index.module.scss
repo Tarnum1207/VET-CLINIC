@@ -1,0 +1,51 @@
+.table{
+    width: 60%;
+    margin: 0 auto;
+    z-index: 0;
+
+    margin-top: 20px;
+}
+
+.table-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    h2{
+        color: #576C70;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    button{
+        background: #576C70;
+        border: none;
+        outline: #576C70;
+        border-radius: 10px;
+        span{
+            font-weight: 500;
+        }
+    }
+}
+
+.tables-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    overflow-y: auto;
+    height: 100vh;
+
+    // отключить скроллбар
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .table{
+        width: 100%;
+
+        &:not(&:last-child){
+            border-bottom: 1px solid rgba($color: #576C70, $alpha: 0.2);
+        }
+    }
+}

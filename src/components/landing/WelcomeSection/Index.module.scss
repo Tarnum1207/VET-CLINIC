@@ -1,0 +1,65 @@
+@import "../../../styles/colors";
+
+.welcome-section{
+  max-width: 1920px;
+  height: 1276px;
+  overflow: hidden;
+  background: $welcomeNavigation;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  &__title{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: 1298px;
+    position: absolute;
+    z-index: 0;
+    top: 32%;
+    div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    h1{
+        font-size: 175px;
+        font-weight: 900;
+        color: rgba(255, 255, 255, 0.17);
+    }
+    h2{
+        font-size: 86px;
+        font-weight: 900;
+        color: rgba(255, 255, 255, 0.17);
+    }
+  }
+}
+
+.russel{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.quote{
+  width: 364px;
+  position: absolute;
+  top: 129px;
+  left: 166px;
+  font-size: 16px;
+  p{
+    color: $white;
+    font-weight: 500;
+  };
+  &__author{
+    font-style: italic;
+    margin-top: 30px;
+    text-align: right;
+    font-weight: 400;
+    span{
+      color: $subtitle
+    }
+  }
+}

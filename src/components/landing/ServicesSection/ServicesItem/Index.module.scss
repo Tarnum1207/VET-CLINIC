@@ -1,0 +1,35 @@
+@import "../../../../styles/colors.scss";
+
+.services__list-item{
+    width: 493px;
+    padding: 39px 53px 0;
+    list-style: none;
+    border-bottom: 1px solid rgba(139, 168, 172, 0.3);
+    &:nth-child(even) {
+        border-left: 1px solid rgba(139, 168, 172, 0.3);
+    }
+    &:nth-last-child(-n+2){
+        border-bottom: none;
+    }
+}
+
+.title{
+    font-size: 40px;
+    color: $blockTitle;
+    font-weight: 600;
+}
+
+.subtitle{
+    color: $servicesSubtitle;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.price{
+    width: 100%;
+    text-align: right;
+    color: #263739;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 30px 0 11px 0;
+}

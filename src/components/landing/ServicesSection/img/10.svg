@@ -1,0 +1,14 @@
+<svg width="72.000000" height="72.000000" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip3_13">
+			<rect id="material-symbols-light:emergency" width="72.000000" height="72.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="material-symbols-light:emergency" width="72.000000" height="72.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip3_13)">
+		<path id="Vector" d="M32.25 61.5L32.25 42.55L15.81 52.05L12.06 45.51L28.5 36L12.06 26.55L15.81 20.01L32.25 29.52L32.25 10.5L39.75 10.5L39.75 29.52L56.18 20.01L59.93 26.55L43.5 36L59.93 45.51L56.18 52.05L39.75 42.55L39.75 61.5L32.25 61.5Z" fill="#ABB6B7" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

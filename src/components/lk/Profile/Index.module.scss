@@ -1,0 +1,182 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding-top: 71px;
+    &-top {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: space-between;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            font-size: 24px;
+            color: #344244;
+            &-top {
+               display: flex;
+               flex-direction: row;
+               font-weight: 500;
+               p{
+                &:last-child{
+                    color: rgba(52, 66, 68, 0.7);
+                }
+               }
+            }
+            &-full-name {
+                font-weight: 600;
+                margin-top: 11px;
+            }
+        }
+        &__right__actions-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            &-item {
+                list-style: none;
+                font-size: 18px;
+                color: rgba(52, 66, 68, 0.7);
+                cursor: pointer;
+                margin-bottom: 13px;
+                font-weight: 500;
+                i{
+                    color: rgb(52, 66, 68);
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    &-pets {
+        h2{
+            color: rgba(52, 66, 68, 0.5);
+            font-size: 27px;
+            font-weight: 500;
+            margin-top: 57px;
+            margin-bottom: 8px;
+        }
+
+        &__list{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 25px;
+            &-item{
+                display: flex;
+                flex-direction: column;
+                padding: 11px 19px;
+                border: 1px solid rgba(86, 108, 112, 0.3);
+				border-radius: 20px;
+                min-width: 320px;
+                height: fit-content;
+                &__add-button{
+                    display: flex;
+                    flex-direction: row;
+                    padding: 11px 19px;
+                    border: 1px solid rgba(86, 108, 112, 0.3);
+				    border-radius: 10px;
+                    min-width: 320px;
+                    background: none;
+                    align-items: center;
+                    justify-content: center;
+
+                    color: rgb(87, 108, 112);
+                    font-size: 17px;
+                    font-weight: 500;
+
+                    cursor: pointer;
+                    i{
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pet-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    &__name{
+        color: rgb(52, 66, 68);
+        font-size: 19px;
+        font-weight: 600;
+    }
+    &__buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        button{
+            background: none;
+            border: 0;
+            color: rgba(86, 108, 112, 0.7);
+            transition: .2s;
+            cursor: pointer;
+            &:hover{
+                color: rgba(86, 108, 112, 1);
+                transition: .2s;
+            }
+        }
+    }
+}
+
+.pet-info{
+    display: flex;
+    flex-direction: column;
+    &__row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        &-item{
+            width: 48%;
+            p{
+                &:first-child{
+                    color: #566C70;
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+                &:last-child{
+                    color: #000;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.stat-rows{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    &-item{
+        display: flex;
+        flex-direction: column;
+        &:not(&:first-child){
+            margin-left: 40px;
+        }
+        p{
+            
+            &:first-child{
+                color: rgba(87, 108, 112, 0.5);
+                font-size: 16px;
+                font-weight: 500;
+            }
+            &:last-child{
+                color: rgb(52, 66, 68);
+                font-size: 19px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    
+}
+

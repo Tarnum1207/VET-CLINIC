@@ -1,0 +1,28 @@
+@import "../../../../styles/colors";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 773px;
+    &:not(&:last-child){
+        margin-bottom: 44px;
+    }
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h3{
+        font-size: 19px;
+        color: $blockTitle;
+        font-size: 31px;
+        margin-left: 9px;
+    }
+}
+
+.description{
+    margin-left: 25px;
+    color: $dark;
+    font-size: 19px;
+}
